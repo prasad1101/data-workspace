@@ -10,3 +10,4 @@ This repo is Prasad's learning workspace for switching from MEAN stack developme
 - After every lesson or review, update `progress.md` (status, checklist, review notes, session log).
 - Commit after each lesson (`lesson(<folder>): ...`). Commit and push after each milestone (`milestone(Mx): ...`).
 - Add interview Q&A to `interview-prep/` as topics are covered.
+- Environment: Docker runs via Colima. Learning Postgres (Docker, `dw-postgres`) is on host port **5433**, because a Homebrew postgresql@17 already uses 5432. Always use `-p 5433` / `localhost:5433`.

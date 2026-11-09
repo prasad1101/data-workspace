@@ -203,13 +203,13 @@ ORDER BY total DESC;
 ### Step 16: Run the SQL file
 ```bash
 export PGPASSWORD=learner
-psql -h localhost -U learner -d playground -f 00-setup/first_queries.sql
+psql -h localhost -p 5433 -U learner -d playground -f 00-setup/first_queries.sql
 ```
 ✅ You should see `CREATE TABLE`, `INSERT 0 3`, and then a small table: Laptop 110000, Monitor 36000, Mouse 5000.
 
 ### Step 17: Play inside Postgres interactively
 ```bash
-psql -h localhost -U learner -d playground
+psql -h localhost -p 5433 -U learner -d playground
 ```
 You're now "inside" the database (prompt `playground=#`). Try:
 ```sql
@@ -275,6 +275,6 @@ docker compose -f 00-setup/docker-compose.yml start
 | `command not found: uv` | Run `brew install uv` again, then close and reopen the terminal |
 | `ModuleNotFoundError: No module named 'pandas'` | The venv isn't active, or the notebook kernel isn't `.venv`. Re-do Step 6 / Step 10.2 |
 | `Cannot connect to the Docker daemon` | Run `colima start` |
-| `port 5432 already in use` | Another Postgres is running: `brew services stop postgresql` and retry Step 14 |
+| `role "learner" does not exist` | You reached the Homebrew Postgres on port 5432 instead of Docker. Always use `-p 5433` |
 | `psql: password authentication failed` | Password is `learner`; or run `export PGPASSWORD=learner` first |
 | Anything else | Copy the full error message and paste it in the chat |
