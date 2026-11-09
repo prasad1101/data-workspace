@@ -1,0 +1,25 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.pytest_cache/
+
+# Data (keep big/raw datasets out of git)
+data/raw/
+*.parquet
+*.csv.gz
+*.db
+*.duckdb
+
+# Secrets
+.env
+*.pem
+
+# OS / editors
+.DS_Store
+.vscode/settings.json
+.idea/
+
+# Docker volumes
+pgdata/
