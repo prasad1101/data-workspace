@@ -136,7 +136,7 @@ print(f"Total revenue: ₹{total_revenue}")        # f-string = JS template lite
 most_expensive = df.loc[df["price"].idxmax(), "product"]
 print(f"Most expensive product: {most_expensive}")
 ```
-✅ Output: `Total revenue: ₹189500` and `Most expensive product: Laptop`
+✅ Output: `Total revenue: ₹168500` and `Most expensive product: Laptop`
 
 **Cell 5: draw a chart**
 ```python

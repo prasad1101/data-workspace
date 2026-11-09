@@ -18,8 +18,8 @@
 | Field | Value |
 |---|---|
 | **Current phase** | Phase 0: Setup & Foundations |
-| **Current lesson** | 0.1: Environment setup |
-| **Next action** | Do the tasks in `00-setup/exercises.md`, then say **"review setup"** |
+| **Current lesson** | 0.3: PostgreSQL in Docker |
+| **Next action** | `00-setup/exercises.md` Part D (Step 13: `colima start`), then Part E quiz, then say **"review step"** |
 | **Last updated** | 2026-11-09 |
 | **Blockers / questions** | — |
 
@@ -46,8 +46,8 @@
 
 ## ✅ Lesson Checklist (current phase)
 ### Phase 0: Setup & Foundations
-- [ ] 0.1 Install `uv`, create a Python 3.12 virtual env, install Jupyter + Pandas
-- [ ] 0.2 Run the first notebook (`00-setup/hello_data.ipynb`)
+- [x] 0.1 Install `uv`, create a Python 3.12 virtual env, install Jupyter + Pandas
+- [x] 0.2 Run the first notebook (`00-setup/hello_data.ipynb`): **score 9/10**
 - [ ] 0.3 Start PostgreSQL in Docker and connect with `psql`
 - [ ] 0.4 Understand how data flows through a company (quiz)
 - [ ] 0.5 Commit + push → **M0 complete**
@@ -56,7 +56,7 @@
 
 ## 🧠 Review Notes / Weak Areas
 *(I'll add feedback from code reviews here so we can revisit weak spots.)*
-- —
+- **0.2 notebook (9/10):** all tasks correct, including the challenges. To fix: `orders = orders = [` typo; leave `df` as a cell's last line instead of `print(df)` for a nicer table. Learn next: `df.nlargest()`, `df.query()`.
 
 ## 💼 Interview Readiness (self-rating 1–5, updated each milestone)
 | Area | Rating | Notes |
@@ -77,3 +77,4 @@
 | Date | What we did | Next |
 |---|---|---|
 | 2026-11-09 | Created the roadmap, progress tracker, repo structure and the Phase 0 lesson. First commit. | Do Phase 0 setup tasks |
+| 2026-11-09 | Finished Parts A–C (venv, packages, first notebook). Notebook reviewed: 9/10. | Part D (Docker + Postgres) and Part E (quiz) |
