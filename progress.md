@@ -17,9 +17,9 @@
 ## 📍 Current Status
 | Field | Value |
 |---|---|
-| **Current phase** | Phase 1: Python for Data |
-| **Current lesson** | 1.1: not started yet |
-| **Next action** | Say **"start phase 1"**. Claude writes `01-python/notes.md` + `exercises.md` (beginner step-by-step style) |
+| **Current phase** | Phase 1: Python, Complete (syllabus: `01-python/README.md`) |
+| **Current lesson** | 1.1: Python Basics (`01-python/01-basics/`) |
+| **Next action** | Read `notes.md`, then do `exercises.md` Parts A–E (REPL, playground, quiz, `check.py` 13/13, receipt) → say **"review"** |
 | **Last updated** | 2026-11-09 |
 | **Blockers / questions** | — |
 
@@ -30,7 +30,7 @@
 |---|---|---|---|
 | M-plan | Roadmap + repo created | ✅ Done | 2026-11-09 |
 | M0 | Setup & Foundations | ✅ Done | 2026-11-09 |
-| M1 | Python for Data + Project P1 (API → CSV ETL) | ⬜ Not started | |
+| M1 | Python Complete (20 lessons incl. FastAPI) + Project P1 (API → Postgres ETL + FastAPI service) | 🟡 In progress | |
 | M2 | SQL Mastery + Project P2 (E-commerce SQL analytics) | ⬜ | |
 | M3 | Pandas & NumPy + Project P3 (EDA report) | ⬜ | |
 | M4 | Stats, Viz & BI + Project P4 (Dashboard) → *Analyst-ready* | ⬜ | |
@@ -51,6 +51,29 @@
 - [x] 0.3 Start PostgreSQL in Docker and connect with `psql`: **8.5/10** after fixes (file is now idempotent)
 - [x] 0.4 Understand how data flows through a company (quiz): **7/10**
 - [x] 0.5 Commit + push → **M0 complete** ✅
+
+### Phase 1: Python, Complete
+- [ ] 1.1 Basics: variables, numbers, strings, booleans
+- [ ] 1.2 Control flow
+- [ ] 1.3 Lists, tuples, sets
+- [ ] 1.4 Dictionaries & collections
+- [ ] 1.5 Comprehensions & functional Python
+- [ ] 1.6 Functions deep dive
+- [ ] 1.7 Strings & text processing (regex)
+- [ ] 1.8 Files, paths & data formats (CSV/JSON)
+- [ ] 1.9 Errors, exceptions, logging & debugging
+- [ ] 1.10 Modules, packages, environments & CLIs
+- [ ] 1.11 OOP
+- [ ] 1.12 Iterators, generators, decorators, context managers
+- [ ] 1.13 Dates & times
+- [ ] 1.14 Working with APIs
+- [ ] 1.15 Databases from Python
+- [ ] 1.16 Type hints, Pydantic & code quality
+- [ ] 1.17 Testing with pytest
+- [ ] 1.18 Performance & concurrency (async)
+- [ ] 1.19 Building data APIs with FastAPI
+- [ ] 1.20 Python interview mastery
+- [ ] Project P1: API → Postgres ETL + FastAPI data service → **M1**
 
 ---
 
@@ -82,3 +105,4 @@
 | 2026-11-09 | Finished Parts A–C (venv, packages, first notebook). Notebook reviewed: 9/10. | Part D (Docker + Postgres) and Part E (quiz) |
 | 2026-11-09 | Fixed a port clash (Docker Postgres moved to 5433), installed the VS Code PostgreSQL extension, reviewed the SQL file (6/10) and quiz (7/10). | Fix SQL file → M0 |
 | 2026-11-09 | SQL file fixed and verified idempotent (4 runs → still 3 rows, revenue 151000). **M0 complete.** | Start Phase 1: Python |
+| 2026-11-10 | Prasad asked for full basics → advanced depth in every phase, plus FastAPI. Wrote the 20-lesson Phase 1 syllabus and Lesson 1.1 (detailed notes, exercises, auto-checker). Roadmap now ~40 weeks. | Do Lesson 1.1 |

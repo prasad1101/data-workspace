@@ -1,7 +1,8 @@
 # 🗺️ Roadmap: MEAN Stack Developer → Data Engineer / Data Analyst
 
 > **Goal:** Become a job-ready, interview-proof Data Engineer who can also do Data Analytics.
-> **Pace assumed:** ~10–12 hrs/week (≈ 1.5 hrs on weekdays + some weekend time). **Total: ~30 weeks.**
+> **Pace assumed:** ~10–12 hrs/week (≈ 1.5 hrs on weekdays + some weekend time). **Total: ~40 weeks.** Week numbers below are approximate.
+> **Depth standard:** every phase covers its topics completely: basics → intermediate → advanced → interview level, so you never need a separate course. Each phase folder has a `README.md` with the full syllabus.
 > Faster or slower is fine — the *milestones* matter, not the dates.
 
 ---
@@ -46,7 +47,8 @@
 - How data flows in a company: sources → ingestion → storage → transformation → BI/ML
 - **Milestone M0:** environment works, first notebook runs, first commit pushed ✅
 
-### 🐍 Phase 1 — Python for Data (Weeks 2–4)
+### 🐍 Phase 1 — Python, Complete (Weeks 2–7) · full syllabus: [01-python/README.md](01-python/README.md)
+20 lessons from basics to advanced (OOP, generators, decorators, async, testing, type hints) + **FastAPI** for building data APIs.
 | Topic | Simple idea | JS comparison |
 |---|---|---|
 | Syntax, types, f-strings | Python basics | `let x = 5` → `x = 5` |
@@ -158,7 +160,7 @@ PostgreSQL in Docker with a realistic e-commerce dataset.
             PostgreSQL / ClickHouse  +  S3/Parquet (history)
                          │
                          ▼
-   Live dashboard (Angular/Node websockets or Grafana/Superset)
+   FastAPI (REST + WebSockets) ──► Live dashboard (Angular) or Grafana/Superset
         + Airflow nightly batch job + dbt models for historical reports
 ```
 Fully Dockerized, documented README with architecture diagram — your **flagship resume project**.
